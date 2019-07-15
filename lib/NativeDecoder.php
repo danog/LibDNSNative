@@ -2,7 +2,6 @@
 
 namespace danog\LibDNSNative;
 
-use LibDNS\Decoder\Decoder;
 use LibDNS\Decoder\DecoderFactory;
 use LibDNS\Encoder\EncodingContext;
 use LibDNS\Encoder\EncodingContextFactory;
@@ -50,7 +49,7 @@ class NativeDecoder
     private $decoderFactory;
 
     /**
-     * Map class names to IDs
+     * Map class names to IDs.
      *
      * @var array
      */
@@ -110,7 +109,7 @@ class NativeDecoder
     }
 
     /**
-     * Encode a question record
+     * Encode a question record.
      *
      * @param \LibDNS\Encoder\EncodingContext $encodingContext
      * @param \LibDNS\Records\Question $record
@@ -132,7 +131,7 @@ class NativeDecoder
         }
     }
     /**
-     * Encode a DomainName field
+     * Encode a DomainName field.
      *
      * @param \LibDNS\Records\Types\DomainName $domainName
      * @param \LibDNS\Encoder\EncodingContext $encodingContext
@@ -180,7 +179,7 @@ class NativeDecoder
     }
 
     /**
-     * Encode a resource record
+     * Encode a resource record.
      *
      * @param \LibDNS\Encoder\EncodingContext $encodingContext
      * @param array $record
@@ -243,17 +242,17 @@ class NativeDecoder
 
         $this->encodeQuestionRecord($encodingContext, $domain, $type);
 
-        $expectedAnswers = count($result);
+        $expectedAnswers = \count($result);
         for ($i = 0; $i < $expectedAnswers; $i++) {
             $this->encodeResourceRecord($encodingContext, $result[$i]);
         }
 
-        $expectedAuth = count($authoritative);
+        $expectedAuth = \count($authoritative);
         for ($i = 0; $i < $expectedAuth; $i++) {
             $this->encodeResourceRecord($encodingContext, $authoritative[$i]);
         }
 
-        $expectedAdditional = count($additional);
+        $expectedAdditional = \count($additional);
         for ($i = 0; $i < $expectedAdditional; $i++) {
             $this->encodeResourceRecord($encodingContext, $additional[$i]);
         }

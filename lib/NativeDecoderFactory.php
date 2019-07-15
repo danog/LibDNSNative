@@ -9,17 +9,10 @@
 
 namespace danog\LibDNSNative;
 
-use LibDNS\Decoder\DecodingContextFactory;
 use \LibDNS\Messages\MessageFactory;
 use \LibDNS\Packets\PacketFactory;
 use \LibDNS\Records\QuestionFactory;
-use \LibDNS\Records\RDataBuilder;
-use \LibDNS\Records\RDataFactory;
 use \LibDNS\Records\RecordCollectionFactory;
-use \LibDNS\Records\ResourceBuilder;
-use \LibDNS\Records\ResourceFactory;
-use \LibDNS\Records\TypeDefinitions\FieldDefinitionFactory;
-use \LibDNS\Records\TypeDefinitions\TypeDefinitionFactory;
 use \LibDNS\Records\TypeDefinitions\TypeDefinitionManager;
 use \LibDNS\Records\Types\TypeBuilder;
 use \LibDNS\Records\Types\TypeFactory;

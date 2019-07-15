@@ -5,8 +5,8 @@ namespace danog\LibDNSNative\Test;
 use danog\LibDNSNative\NativeDecoderFactory;
 use danog\LibDNSNative\NativeEncoderFactory;
 use LibDNS\Messages\MessageTypes;
-use PHPUnit\Framework\TestCase;
 use LibDNS\Records\ResourceQTypes;
+use PHPUnit\Framework\TestCase;
 
 class NativeEncoderTest extends TestCase
 {

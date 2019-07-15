@@ -1,10 +1,10 @@
 <?php
-use danog\LibDNSNative\NativeEncoderFactory;
-use LibDNS\Records\QuestionFactory;
 use danog\LibDNSNative\NativeDecoderFactory;
-use LibDNS\Records\ResourceQTypes;
+use danog\LibDNSNative\NativeEncoderFactory;
 use LibDNS\Messages\MessageFactory;
 use LibDNS\Messages\MessageTypes;
+use LibDNS\Records\QuestionFactory;
+use LibDNS\Records\ResourceQTypes;
 
 require 'vendor/autoload.php';
 
@@ -18,9 +18,9 @@ $records->add($question);
 $encoder = (new NativeEncoderFactory)->create();
 $question = $encoder->encode($message);
 
-$result = dns_get_record(...$question);
+$result = \dns_get_record(...$question);
 
 $decoder = (new NativeDecoderFactory)->create();
 $result = $decoder->decode($result, ...$question);
 
-var_dump($result);
+\var_dump($result);

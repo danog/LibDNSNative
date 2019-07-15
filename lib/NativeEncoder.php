@@ -1,4 +1,4 @@
-<?php declare (strict_types = 1);
+<?php declare(strict_types = 1);
 /**
  * Encodes Message objects to query strings.
  *
@@ -14,9 +14,8 @@
 
 namespace danog\LibDNSNative;
 
-use LibDNS\Messages\MessageTypes;
 use \LibDNS\Messages\Message;
-use LibDNS\Records\ResourceQTypes;
+use LibDNS\Messages\MessageTypes;
 
 /**
  * Encodes Message objects to query strings.
@@ -45,9 +44,9 @@ class NativeEncoder
         if ($questions->count() !== 1) {
             throw new \InvalidArgumentException('Invalid question: only one question record can be provided at a time');
         }
-        
+
         $question = $questions->getRecordByIndex(0);
-        
+
         return [
             \implode('.', $question->getName()->getLabels()), // Name
             $question->getType(), // Type

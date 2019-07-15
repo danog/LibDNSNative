@@ -38,7 +38,7 @@ class NativeDecoderTest extends TestCase
                         'class' => 'IN',
                         'ttl' => 3600,
                         'type' => 48,
-                        'data' => base64_decode('AQADDaCTEREs+ROIGM0v6ulw671NajD2CIwlsyWjmrvFzRGXqgmCg+Wq9CEXfCql1xSZKplX0bzBj5jNcfHxgGtl4Ug='),
+                        'data' => \base64_decode('AQADDaCTEREs+ROIGM0v6ulw671NajD2CIwlsyWjmrvFzRGXqgmCg+Wq9CEXfCql1xSZKplX0bzBj5jNcfHxgGtl4Ug='),
                     ],
 
                     [
@@ -46,7 +46,7 @@ class NativeDecoderTest extends TestCase
                         'class' => 'IN',
                         'ttl' => 3600,
                         'type' => 48,
-                        'data' => base64_decode('AQEDDZnbLMFMq9wz1td9pjovFfcRElhPI06NHcQo456KSpfhqicaVV3JBwHhfipMS28SC3wy1E9KwCvYlM8tS+d3ihk='),
+                        'data' => \base64_decode('AQEDDZnbLMFMq9wz1td9pjovFfcRElhPI06NHcQo456KSpfhqicaVV3JBwHhfipMS28SC3wy1E9KwCvYlM8tS+d3ihk='),
                     ],
                 ],
                 'daniil.it',
@@ -65,7 +65,7 @@ class NativeDecoderTest extends TestCase
                         'class' => 'IN',
                         'ttl' => 2898,
                         'type' => 1,
-                        'data' => base64_decode('EazgLw=='),
+                        'data' => \base64_decode('EazgLw=='),
                     ],
 
                     [
@@ -73,7 +73,7 @@ class NativeDecoderTest extends TestCase
                         'class' => 'IN',
                         'ttl' => 2898,
                         'type' => 1,
-                        'data' => base64_decode('EY6gOw=='),
+                        'data' => \base64_decode('EY6gOw=='),
                     ],
 
                     [
@@ -81,7 +81,7 @@ class NativeDecoderTest extends TestCase
                         'class' => 'IN',
                         'ttl' => 2898,
                         'type' => 1,
-                        'data' => base64_decode('EbJgOw=='),
+                        'data' => \base64_decode('EbJgOw=='),
                     ],
                 ],
                 'apple.com',
@@ -100,7 +100,7 @@ class NativeDecoderTest extends TestCase
                         'class' => 'IN',
                         'ttl' => 166,
                         'type' => 1,
-                        'data' => base64_decode('aBgUIg=='),
+                        'data' => \base64_decode('aBgUIg=='),
                     ],
 
                     [
@@ -108,7 +108,7 @@ class NativeDecoderTest extends TestCase
                         'class' => 'IN',
                         'ttl' => 166,
                         'type' => 1,
-                        'data' => base64_decode('aBgVIg=='),
+                        'data' => \base64_decode('aBgVIg=='),
                     ],
                 ],
                 'amphp.org',
@@ -126,7 +126,7 @@ class NativeDecoderTest extends TestCase
                         'class' => 'IN',
                         'ttl' => 282,
                         'type' => 5,
-                        'data' => base64_decode('A2docwxnb29nbGVob3N0ZWQDY29tAA=='),
+                        'data' => \base64_decode('A2docwxnb29nbGVob3N0ZWQDY29tAA=='),
                     ],
                 ],
                 'tssthacks.daniil.it',
@@ -141,7 +141,7 @@ class NativeDecoderTest extends TestCase
                         'class' => 'IN',
                         'ttl' => 289,
                         'type' => 15,
-                        'data' => base64_decode('AAoCbXgGeWFuZGV4A25ldAA='),
+                        'data' => \base64_decode('AAoCbXgGeWFuZGV4A25ldAA='),
                     ],
                 ],
                 'daniil.it',
